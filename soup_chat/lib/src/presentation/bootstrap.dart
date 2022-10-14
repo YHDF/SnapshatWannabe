@@ -47,6 +47,8 @@ class BootstrapState extends State<Bootstrap> {
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.amberAccent,
         selectedLabelStyle: TextStyle(color: Colors.black),
+        selectedIconTheme: IconThemeData(color: Colors.black),
+        unselectedLabelStyle: TextStyle(color: Colors.black, backgroundColor: Colors.black),
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home, color: Colors.black),
