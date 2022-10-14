@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "35526965645",
+    "project_id": "soupchat-d14a0",
+    "storage_bucket": "soupchat-d14a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35526965645:android:d2875eb165e25e498d25c4",
+        "android_client_info": {
+          "package_name": "fraud.snapchat.soup_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35526965645-q1s0kvrlo7bdtjos09v4hh5f0reklsk1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5RVay492Fr8ZLGgi21LtFTnK0aD3-W_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35526965645-q1s0kvrlo7bdtjos09v4hh5f0reklsk1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
