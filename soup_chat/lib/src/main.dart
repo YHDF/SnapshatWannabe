@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
+import 'package:flutter/services.dart';
 import 'package:soup_chat/src/presentation/bootstrap.dart';
 
 void main() async {
@@ -11,6 +11,7 @@ void main() async {
   );
 
   runApp(const MyApp());
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.leanBack);
 }
 
 class MyApp extends StatelessWidget {
@@ -18,12 +19,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home:  Bootstrap(),
-    );
+    return Bootstrap();
   }
 }
