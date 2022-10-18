@@ -10,9 +10,16 @@ class Bootstrap extends StatefulWidget {
 }
 
 class BootstrapState extends State<Bootstrap> {
+
   @override
   void initState() {
     super.initState();
+  }
+
+  callback(newIndex) {
+    setState(() {
+      globals.Variables.selectedIndex = newIndex;
+    });
   }
 
 
@@ -29,7 +36,7 @@ class BootstrapState extends State<Bootstrap> {
           child: globals.Variables.widgetOptions.elementAt(globals.Variables.selectedIndex)
     ),
         appBar: TopBar(),
-        bottomNavigationBar: BottomBar(),
+        bottomNavigationBar: BottomBar(callback),
       ),
     );
   }

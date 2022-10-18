@@ -3,21 +3,29 @@ import '../shared/variables.dart' as globals;
 
 
 class BottomBar extends StatefulWidget {
+
+  final Function(int index)? callback;
+
+  const BottomBar(this.callback);
+
   @override
-  State<StatefulWidget> createState() => BottomBarState();
+  State<StatefulWidget> createState() => BottomBarState(callback);
 }
 
 class BottomBarState extends State<BottomBar> {
+  BottomBarState(Function(int index)? callback);
+
 
   @override
   void initState() {
     super.initState();
   }
 
+
   void _onItemTapped(int index) {
-    setState(() {
-      globals.Variables.selectedIndex = index;
-    });
+    globals.Variables.selectedIndex = index;
+    widget.callback!(index);
+
   }
 
   @override

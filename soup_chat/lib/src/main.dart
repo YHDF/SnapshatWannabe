@@ -6,9 +6,9 @@ import 'package:flutter/services.dart';
 import 'package:soup_chat/src/presentation/bootstrap.dart';
 
 void main() async {
-  await Firebase.initializeApp(
+  /*await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
-  );
+  );*/
 
   runApp(const MyApp());
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.leanBack);
