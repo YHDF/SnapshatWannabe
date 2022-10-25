@@ -1,4 +1,4 @@
-class User {
+class SnapUser {
   int? _id;
   String? _email;
   String? _firstname;
@@ -7,7 +7,7 @@ class User {
   String? _nickname;
   String? _birthDate;
 
-  User({int? id, String? firstname, String? lastname, String? email, String? nickname, String? avatar, String? birthDate,}) {
+  SnapUser({int? id, String? firstname, String? lastname, String? email, String? nickname, String? avatar, String? birthDate,}) {
     _email = email;
     _id = id;
     _firstname = firstname;
@@ -59,7 +59,7 @@ class User {
     _birthDate = value;
   }
 
-  User.fromJson(dynamic json) {
+  SnapUser.fromJson(dynamic json) {
     _id = json['id'];
     _email = json['email'];
     _firstname = json['firstname'];
