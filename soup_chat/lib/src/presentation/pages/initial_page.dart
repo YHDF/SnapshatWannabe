@@ -7,7 +7,7 @@ class InitialPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.blueAccent,
+        color: Colors.yellowAccent,
         child: SafeArea(
           child: Container(
             width: double.infinity,
@@ -24,7 +24,7 @@ class InitialPage extends StatelessWidget {
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 55,
-                          color: Colors.white),
+                          color: Colors.black),
                     ),
                   ),
                 ),
@@ -36,13 +36,13 @@ class InitialPage extends StatelessWidget {
                       style: TextStyle(
                           fontWeight: FontWeight.w500,
                           fontSize: 25,
-                          color: Colors.white),
+                          color: Colors.black),
                     ),
                     SizedBox(height: 30),
                     Text(
                       "Create an account or login.",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.white, fontSize: 15),
+                      style: TextStyle(color: Colors.black, fontSize: 15),
                     ),
                   ],
                 ),
@@ -93,7 +93,7 @@ class InitialPage extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       fontSize: 20,
-                      color: Colors.blueAccent,
+                      color: Colors.black,
                     ),
                   ),
                 ),

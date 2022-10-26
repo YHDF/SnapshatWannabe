@@ -1,17 +1,17 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:soup_chat/src/presentation/bootstrap.dart';
 import 'package:soup_chat/src/presentation/pages/initial_page.dart';
-
+import '../firebase_options.dart';
 import 'data/repositories/auth_repository.dart';
 
 void main() async {
-  /*await Firebase.initializeApp(
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
-  );*/
+  );
 
   runApp(const MyApp());
-  SystemChrome.setEnabledSystemUIMode(SystemUiMode.leanBack);
 }
 
 class MyApp extends StatelessWidget {
@@ -44,16 +44,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   final AuthRepository? authRepository = AuthRepository.getInstance();
 
-  @override
-  void initState(){
-    super.initState();
-  }
-
-
-  @override
-  void dispose(){
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
