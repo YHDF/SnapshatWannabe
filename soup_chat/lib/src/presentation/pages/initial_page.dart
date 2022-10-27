@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:soup_chat/src/presentation/pages/signin.dart';
+import 'package:soup_chat/src/presentation/pages/signup.dart';
 
 class InitialPage extends StatelessWidget {
 
@@ -80,10 +81,10 @@ class InitialPage extends StatelessWidget {
                   minWidth: double.infinity,
                   height: 60,
                   onPressed: () {
-                    // Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //         builder: (context) => const SignUp()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const SignUp()));
                   },
                   color: Colors.white,
                   shape: RoundedRectangleBorder(
