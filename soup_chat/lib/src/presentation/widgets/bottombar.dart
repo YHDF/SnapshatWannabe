@@ -45,15 +45,15 @@ class BottomBarState extends State<BottomBar> {
             label: 'Chat',
           ),
           BottomNavigationBarItem(
-            icon: Icon(IconData(0xee67, fontFamily: 'MaterialIcons'), size: 50,),
+            icon: Icon(IconData(0xe12f, fontFamily: 'MaterialIcons'), size: 50,),
             label: 'Map',
           ),
           BottomNavigationBarItem(
-            icon: Icon(IconData(0xe61f, fontFamily: 'MaterialIcons')),
+            icon: Icon(IconData(0xe332, fontFamily: 'MaterialIcons')),
             label: 'Stories',
           ),
           BottomNavigationBarItem(
-            icon: Icon(IconData(0xe448, fontFamily: 'MaterialIcons')),
+            icon: Icon(IconData(0xe491, fontFamily: 'MaterialIcons')),
             label: 'Spotlight',
           ),
         ],

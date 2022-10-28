@@ -11,13 +11,24 @@ class Bootstrap extends StatefulWidget {
 
 class BootstrapState extends State<Bootstrap> {
 
+  TopBar? _topBar;
+  BottomBar? _bottomBar;
+
   @override
   void initState() {
     super.initState();
+    _topBar = const TopBar();
+    _bottomBar = BottomBar(callback);
   }
-
   callback(newIndex) {
     setState(() {
+      if(newIndex == 0 || newIndex == 2){
+        _topBar = null;
+        _bottomBar = null;
+      }else{
+        _topBar = const TopBar();
+        _bottomBar = BottomBar(callback);
+      }
       globals.Variables.selectedIndex = newIndex;
     });
   }
@@ -35,8 +46,8 @@ class BootstrapState extends State<Bootstrap> {
         body:  Center(
           child: globals.Variables.widgetOptions.elementAt(globals.Variables.selectedIndex)
     ),
-        appBar: TopBar(),
-        bottomNavigationBar: BottomBar(callback),
+        appBar: _topBar,
+        bottomNavigationBar: _bottomBar,
       ),
     );
   }

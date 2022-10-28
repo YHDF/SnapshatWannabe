@@ -4,6 +4,8 @@
         android:label="soup_chat"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+       <meta-data android:name="com.google.android.geo.API_KEY"
+           android:value="AIzaSyAuOUK-POWwMBzHL7HnM50ico66e0upbSw"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"

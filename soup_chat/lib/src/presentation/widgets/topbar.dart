@@ -8,7 +8,7 @@ class TopBar extends StatefulWidget implements PreferredSizeWidget {
 
   @override
   // TODO: implement preferredSize
-  Size get preferredSize => Size(400, 60);
+  Size get preferredSize => const Size(400, 60);
 }
 
 class TopBarState extends State<TopBar> {
@@ -25,7 +25,7 @@ class TopBarState extends State<TopBar> {
       backgroundColor: Colors.transparent,
       flexibleSpace: Row(
         children: [
-          const VerticalDivider(width: 20, color: Colors.transparent),
+          const VerticalDivider(width: 10, color: Colors.transparent),
           SizedBox(
             width: 60,
             child: Column(
@@ -35,7 +35,7 @@ class TopBarState extends State<TopBar> {
                   height: 50,
                   width: 50,
                   decoration: BoxDecoration(
-                    color: Colors.black26,
+                    color: Colors.lightBlue,
                     borderRadius: BorderRadius.circular(100),
                   ),
                 ),
